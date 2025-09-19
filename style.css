@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(50, 45, 45);
+    /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+}
+.card{
+    background: linear-gradient(135deg, #4f61a2 0%, #8c7f99 100%);
+    max-width: 650px;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.searchBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-bottom: 10px; */
+    position: relative;
+}
+.searchBar input{
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: rgb(75, 70, 70);
+}
+.searchBar button{
+    position: absolute;
+    right: 0.5px;
+    width: 40px;
+    height: 38px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: rgb(75, 70, 70);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.searchBar button:hover{
+    background: rgb(95, 90, 90);
+}
+.searchBar input::placeholder{
+    color: #d1c9c9;
+}
+.searchBar input{
+    color: #f3efef;
+}
+.weather{
+    text-align: center;
+    margin: 10px;
+}
+.weather img{
+    width: 150px;
+    height: 150px;
+}
+.weather .h1{
+    color: #f3efef;
+}
+.humidity, .Wind{
+    font-size: 14px;
+    color: #f3efef;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.col{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0px ;
+    padding: 30px 0px 10px;
+}
+.col img{
+    width: 50px;
+    height: 50px;
+    padding: 7px;
+}
+.humidity, .Wind{
+    display: flex;
+    text-align: center;
+    justify-content: start;
+    align-items: center;
+    width: 130px;
+}
+.weather {
+    display: none;
+}
+.error{
+    display: none;
+    text-align: left;
+    color: #f3efef;
+    font-size: 12px;
+    margin-left: 7px;
+}
